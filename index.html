@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Indoor Planet Care Dashboard.</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <div class="logo-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#2b8a3e"
+            viewBox="0 0 256 256"
+            class="logo-icon"
+          >
+            <path
+              d="M208,48a87.48,87.48,0,0,0-35.36,7.43c-15.1-25.37-39.92-38-41.06-38.59a8,8,0,0,0-7.16,0c-1.14.58-26,13.22-41.06,38.59A87.48,87.48,0,0,0,48,48a8,8,0,0,0-8,8V96a88.11,88.11,0,0,0,80,87.63v35.43L83.58,200.84a8,8,0,1,0-7.16,14.32l48,24a8,8,0,0,0,7.16,0l48-24a8,8,0,0,0-7.16-14.32L136,219.06V183.63A88.11,88.11,0,0,0,216,96V56A8,8,0,0,0,208,48ZM120,167.56A72.1,72.1,0,0,1,56,96V64.44A72.1,72.1,0,0,1,120,136Zm8-68.2A88.4,88.4,0,0,0,97.36,63.19c9.57-15.79,24-25.9,30.64-30,6.65,4.08,21.08,14.19,30.64,30A88.46,88.46,0,0,0,128,99.36ZM200,96a72.1,72.1,0,0,1-64,71.56V136a72.1,72.1,0,0,1,64-71.56Z"
+            ></path>
+          </svg>
+          <h1>Plant Care</h1>
+        </div>
+
+        <div class="search-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="search-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+          <input
+            type="search"
+            id="site-search"
+            placeholder="Search plants..."
+          />
+        </div>
+
+        <div class="svg-wrapper">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="notification"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+            />
+          </svg>
+        </div>
+        <img src="img/female.jpg" alt="Crestina Hayes" />
+      </header>
+
+      <section class="my-plants">
+        <div class="my-plants-header">
+          <h2>My Plants</h2>
+          <button class="add-plant">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="add-plant-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+              />
+            </svg>
+            Add New Plant
+          </button>
+        </div>
+
+        <div class="upcoming-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="upcoming-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+            />
+          </svg>
+          <h3 class="upcoming-title">Upcoming Tasks</h3>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>PLANT</th>
+              <th>WATERING</th>
+              <th>SUNLIGHT</th>
+              <th>FERTILIZATION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Fiddle Leaf Fig</th>
+              <td>In 2 days</td>
+              <td>Bright, indirect</td>
+              <td>In 3 weeks</td>
+            </tr>
+
+            <tr>
+              <th>Snake Plant</th>
+              <td>In 5 days</td>
+              <td>Low to bright, indirect</td>
+              <td>In 6 weeks</td>
+            </tr>
+
+            <tr>
+              <th>Monstera</th>
+              <td>In 3 days</td>
+              <td>Bright, indirect</td>
+              <td>In 4 weeks</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="all-plants">
+        <div class="all-plants-title">
+          <img src="img/leaf-outline.svg" />
+          <h3>All Plants</h3>
+        </div>
+
+        <div class="cards-container">
+          <div class="all-plants-cards">
+            <div class="card">
+              <img
+                src="img/fidle-leaf-fig.jpg"
+                alt="Fiddle leaf fig"
+                class="card-pic"
+              />
+              <h3>Fiddle Leaf Fig</h3>
+              <div class="water">
+                <img src="img/water-outline.svg" width="24" height="24" />
+                <p>Water in 2 days</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="all-plants-cards">
+            <div class="card">
+              <img
+                src="img/snake-plant.jpg"
+                alt="Fiddle leaf fig"
+                class="card-pic"
+              />
+              <h3>Snake Plant</h3>
+              <div class="water">
+                <img src="img/water-outline.svg" width="24" height="24" />
+                <p>Water in 5 days</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="all-plants-cards">
+            <div class="card">
+              <img
+                src="img/monstera.jpg"
+                alt="Fiddle leaf fig"
+                class="card-pic"
+              />
+              <h3>Monstera</h3>
+              <div class="water">
+                <img src="img/water-outline.svg" width="24" height="24" />
+                <p>Water in 3 days</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="all-plants-cards">
+            <div class="card">
+              <div class="pothos">
+                <img src="img/image-outline.svg" class="pothos-pg" />
+                <img src="img/add-outline.svg" class="pothos-pg-plus" />
+              </div>
+              <h3>Pothos</h3>
+              <div class="water">
+                <img src="img/water-outline.svg" width="24" height="24" />
+                <p>Water in 4 days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
