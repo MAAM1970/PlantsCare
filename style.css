@@ -234,6 +234,7 @@ tbody td {
 }
 
 .card {
+  min-width: 25rem;
   padding-bottom: 1.6rem;
   border-radius: 0.8rem;
   box-shadow: 0 0 12px rgb(0, 0, 0, 0.2);
