@@ -20,46 +20,50 @@
   --pothos-img-color: #a8a29e;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   max-height: 100vh;
   font-family: "Space Grotesk", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
-  column-gap: 64px;
+  column-gap: 6.4rem;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 64px;
-  row-gap: 32px;
+  column-gap: 6.4rem;
+  row-gap: 3.2rem;
 }
 
 header {
   grid-column: 1/-1;
-  padding: 16px 48px;
+  padding: 1.6rem 4.8rem;
   box-shadow: 0 0 24px rgb(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: auto 1fr auto 5%;
   align-items: center;
-  column-gap: 24px;
+  column-gap: 2.4rem;
 }
 .logo-box {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 1.2rem;
 }
 
 .logo-icon {
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   color: var(--main-color);
   font-weight: bold;
 }
 
 .logo-box h1 {
   color: var(--grey-color);
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .search-box {
@@ -68,21 +72,21 @@ header {
 }
 
 .search-box input {
-  padding: 6px 6px 6px 32px;
+  padding: 0.6rem 0.6rem 0.6rem 3.2rem;
   color: var(--grey-color);
   background-color: var(--back-color);
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .search-icon {
-  height: 16px;
-  width: 16px;
+  height: 1.6rem;
+  width: 1.6rem;
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 1.6rem;
   position: absolute;
-  left: 8px;
+  left: 0.8rem;
   transform: translateY(50%);
 }
 
@@ -92,30 +96,30 @@ header {
 }
 .svg-wrapper::after {
   content: "";
-  font-size: 8px;
+  font-size: 0.8rem;
   display: inline-block;
   background-color: red;
-  padding: 4px;
+  padding: 0.4rem;
   border: 2px solid var(--notification-border-color);
   border-radius: 50%;
   position: absolute;
-  top: -8px;
-  right: -4px;
+  top: -0.8rem;
+  right: -0.4rem;
 }
 
 header img {
-  width: 32px;
-  height: 32px;
+  width: 3.2rem;
+  height: 3.2rem;
   border: 4px solid var(--pic-border-color);
   border-radius: 50%;
 }
 
 .my-plants {
-  padding: 24px 192px;
+  padding: 2.4rem 19.2rem;
   grid-column: 1/-1;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 2.4rem;
 }
 
 .my-plants-header {
@@ -126,26 +130,26 @@ header img {
 
 .add-plant {
   border: none;
-  padding: 8px 16px 8px 10px;
+  padding: 0.8rem 1.6rem 0.8rem 1rem;
   color: #fff;
   background-color: var(--pic-border-color);
   border-radius: 6px;
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.8rem;
 }
 
 .add-plant-icon {
-  height: 20px;
-  width: 20px;
+  height: 2rem;
+  width: 2rem;
   font-weight: 700;
 }
 
 .upcoming-box {
   display: flex;
   justify-content: start;
-  gap: 12px;
+  gap: 1.2rem;
 }
 
 .upcoming-icon {
@@ -155,20 +159,20 @@ header img {
 
 .upcoming-title {
   color: var(--grey-color);
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 table {
-  width: 1320px;
+  width: 132rem;
   box-shadow: 0 0 12px rgb(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 1.6rem;
   border-radius: 8px;
   border-collapse: collapse;
 }
 
 th,
 td {
-  padding: 16px;
+  padding: 1.6rem;
   text-align: left;
 }
 
@@ -184,33 +188,33 @@ tbody th {
 
 tbody td {
   color: var(--cells-color);
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .all-plants {
   grid-column: 1/-1;
-  padding: 24px 192px;
+  padding: 2.4rem 19.2rem;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 2.4rem;
 }
 
 .all-plants-title {
   color: var(--grey-color);
   display: flex;
   justify-content: start;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .cards-container {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 4rem;
 }
 
 .all-plants-title img {
-  height: 20px;
-  width: 20px;
+  height: 2rem;
+  width: 2rem;
   font-weight: 700;
   color: var(--pic-border-color);
   transform: rotateY(180deg);
@@ -221,27 +225,27 @@ tbody td {
 }
 
 .all-plants-cards {
-  width: 1320px;
-  padding-bottom: 64px;
+  width: 132rem;
+  padding-bottom: 6.4rem;
 }
 
 .all-plants-cards {
-  width: 300px;
+  width: 30rem;
 }
 
 .card {
-  padding-bottom: 16px;
-  border-radius: 8px;
+  padding-bottom: 1.6rem;
+  border-radius: 0.8rem;
   box-shadow: 0 0 12px rgb(0, 0, 0, 0.2);
 }
 
 .card-pic,
 .pothos {
-  max-width: 300px;
-  height: 300px;
-  margin-bottom: 16px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  max-width: 30rem;
+  height: 30rem;
+  margin-bottom: 1.6rem;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
 }
 
 .pothos {
@@ -250,35 +254,35 @@ tbody td {
 }
 
 .pothos-pg {
-  height: 48px;
-  width: 48px;
-  top: 150px;
-  left: 150px;
+  height: 4.8rem;
+  width: 4.8rem;
+  top: 15rem;
+  left: 15rem;
   transform: translate(-50%, -50%);
   position: absolute;
 }
 
 .pothos-pg-plus {
-  height: 22px;
-  width: 22px;
+  height: 2.2rem;
+  width: 2.2rem;
   background-color: var(--pothos-color);
-  top: 132px;
-  left: 168px;
+  top: 13.2rem;
+  left: 16.8rem;
   transform: translate(-50%, -50%);
   position: absolute;
 }
 
 .card h3 {
-  margin-left: 12px;
-  margin-bottom: 10px;
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
   color: var(--grey-color);
 }
 
 .water {
-  margin-left: 8px;
+  margin-left: 0.8rem;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 1.2rem;
 }
 
 .water img {
